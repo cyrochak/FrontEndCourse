@@ -1,0 +1,60 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image{
+  float: left;
+  height: 250px;
+  margin-right: 50px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.card{
+  width: 40%;
+}
+.word{
+  color: midnightblue;
+}
+
+@media (max-width:600px){
+  .card img {
+    display: inline;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover; /* this should be included in limited display, so that the image can be fit to its size*/
+  }
+  .card{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify; /* Missed. it is needed to make the space when skretching */
+  }
+  h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .logo{
+    width: 200px;
+  }
+}
